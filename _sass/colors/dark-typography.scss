@@ -1,0 +1,154 @@
+/*
+ * The main dark mode styles with Tokyo Night colors
+ */
+
+ @mixin dark-scheme {
+  /* Framework color */
+  --main-bg: #1a1b26; /* Darker background */
+  --mask-bg: #2f3549; /* Sidebar/Overlay background */
+  --main-border-color: #3b4261;
+
+  /* Common color */
+  --text-color: #a9b1d6; /* Light text */
+  --text-muted-color: #7982a9; /* Muted text */
+  --heading-color: #c0caf5; /* Heading color */
+  --blockquote-border-color: #414868;
+  --blockquote-text-color: #9aa5ce;
+  --link-color: #7aa2f7; /* Tokyo Night blue */
+  --link-underline-color: #3b436b;
+  --button-bg: #1f2335;
+  --btn-border-color: #3b4261;
+  --btn-backtotop-color: var(--text-color);
+  --btn-backtotop-border-color: var(--btn-border-color);
+  --btn-box-shadow: var(--main-bg);
+  --card-header-bg: #292e42;
+  --label-color: #737aa2;
+  --checkbox-color: #565f89;
+  --checkbox-checked-color: var(--link-color);
+  --img-bg: radial-gradient(circle, #1a1b26 0%, #222436 100%);
+  --shimmer-bg: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(75, 74, 101, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  /* Sidebar */
+  --sidebar-bg: radial-gradient(circle, #222436 0%, #1f2335 100%);
+  --sidebar-muted-color: #565f89;
+  --sidebar-active-color: #ffffffcc;
+  --sidebar-hover-bg: rgba(64, 64, 88, 0.33);
+  --sidebar-btn-bg: rgba(84, 83, 105, 0.3);
+  --sidebar-btn-color: #787c99;
+  --avatar-border-color: rgba(206, 206, 240, 0.9);
+
+  /* Topbar */
+  --topbar-bg: rgba(27, 28, 34, 0.64);
+  --topbar-text-color: var(--text-color);
+  --search-wrapper-border-color: #3b4261;
+  --search-icon-color: #9aa5ce;
+  --input-focus-border-color: #6a74aa;
+
+  /* Home page */
+  --post-list-text-color: var(--text-color);
+  --btn-patinator-text-color: var(--text-color);
+  --btn-paginator-hover-color: #3b4261;
+  --btn-paginator-border-color: var(--btn-border-color);
+  --btn-text-color: var(--text-color);
+
+  /* Posts */
+  --toc-highlight: #7aa2f7;
+  --tag-bg: #2b3448;
+  --tag-hover: #364a67;
+  --tb-odd-bg: rgba(42, 47, 77, 0.52);
+  --tb-even-bg: #2f3549;
+  --tb-border-color: var(--tb-odd-bg);
+  --footnote-target-bg: #7aa2f7;
+  --btn-share-color: #7982a9;
+  --btn-share-hover-color: #a3aed8;
+  --relate-post-date: var(--text-muted-color);
+  --card-bg: #1f2335;
+  --card-hovor-bg: #3b4261;
+  --card-shadow: rgba(18, 18, 18, 0.72) 0 6px 18px 0,
+    rgba(137, 135, 135, 0.24) 0 0 0 1px;
+  --kbd-wrap-color: #4e5174;
+  --kbd-text-color: #d3d7e8;
+  --kbd-bg-color: #1a1b26;
+  --prompt-text-color: rgba(216, 212, 212, 0.75);
+  --prompt-tip-bg: rgba(22, 60, 36, 0.64);
+  --prompt-tip-icon-color: rgba(15, 164, 15, 0.81);
+  --prompt-info-bg: rgba(7, 59, 104, 0.8);
+  --prompt-info-icon-color: #7aa2f7;
+  --prompt-warning-bg: rgba(90, 69, 3, 0.88);
+  --prompt-warning-icon-color: rgba(255, 165, 0, 0.8);
+  --prompt-danger-bg: rgba(86, 28, 8, 0.8);
+  --prompt-danger-icon-color: #f7768e; /* Tokyo Night Red */
+
+  /* tags */
+  --tag-border: #4e5174;
+  --tag-shadow: #1a1b26;
+  --search-tag-bg: var(--tag-bg);
+  --dash-color: #3b4261;
+
+  /* categories */
+  --categories-border: rgba(100, 106, 144, 0.5);
+  --categories-hover-bg: #364a67;
+  --categories-icon-hover-color: white;
+
+  /* archives */
+  --timeline-node-bg: #a3aed8;
+  --timeline-color: #3b4261;
+  --timeline-year-dot-color: var(--timeline-color);
+
+  .light {
+    display: none;
+  }
+
+  hr {
+    border-color: var(--main-border-color);
+  }
+
+  /* categories */
+  .categories.card,
+  .list-group-item {
+    background-color: var(--card-bg);
+  }
+
+  .categories {
+    .card-header {
+      background-color: var(--card-header-bg);
+    }
+
+    .list-group-item {
+      border-left: none;
+      border-right: none;
+      padding-left: 2rem;
+      border-color: var(--categories-border);
+
+      &:last-child {
+        border-bottom-color: var(--card-bg);
+      }
+    }
+  }
+
+  #archives li:nth-child(odd) {
+    background-image: linear-gradient(
+      to left,
+      #1a1b26,
+      #1a1b26,
+      #1a1b26,
+      #1a1b26,
+      #1a1b26
+    );
+  }
+
+  color-scheme: dark;
+
+  #disqus_thread {
+    color-scheme: none;
+  }
+} /* dark-scheme */
+
+img {
+  background: none !important;
+}

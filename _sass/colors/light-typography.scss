@@ -1,0 +1,154 @@
+/*
+ * The main light mode styles with the new colors
+ */
+
+ @mixin light-scheme {
+  /* Framework color */
+  --main-bg: #f5f5f5; /* Light background */
+  --mask-bg: #d0e8f2; /* Sidebar/Overlay background */
+  --main-border-color: #c1c3c5;
+
+  /* Common color */
+  --text-color: #4c4f56; /* Dark text */
+  --text-muted-color: #767c86; /* Muted text */
+  --heading-color: #2b3a42; /* Heading color */
+  --blockquote-border-color: #9c9fa5;
+  --blockquote-text-color: #5a6068;
+  --link-color: #007acc; /* Accent blue */
+  --link-underline-color: #60a5fa;
+  --button-bg: #eaeaea;
+  --btn-border-color: #c1c3c5;
+  --btn-backtotop-color: var(--text-color);
+  --btn-backtotop-border-color: var(--btn-border-color);
+  --btn-box-shadow: var(--main-bg);
+  --card-header-bg: #f5f5f5;
+  --label-color: #4c4f56;
+  --checkbox-color: #c1c3c5;
+  --checkbox-checked-color: var(--link-color);
+  --img-bg: radial-gradient(circle, #f5f5f5 0%, #d0e8f2 100%);
+  --shimmer-bg: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(204, 204, 204, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  /* Sidebar */
+  --sidebar-bg: radial-gradient(circle, #d0e8f2 0%, #f5f5f5 100%);
+  --sidebar-muted-color: #767c86;
+  --sidebar-active-color: #2b3a42;
+  --sidebar-hover-bg: rgba(128, 128, 128, 0.1);
+  --sidebar-btn-bg: rgba(211, 211, 211, 0.3);
+  --sidebar-btn-color: #4c4f56;
+  --avatar-border-color: rgba(211, 211, 240, 0.9);
+
+  /* Topbar */
+  --topbar-bg: rgba(243, 243, 243, 0.64);
+  --topbar-text-color: var(--text-color);
+  --search-wrapper-border-color: #c1c3c5;
+  --search-icon-color: #767c86;
+  --input-focus-border-color: #007acc;
+
+  /* Home page */
+  --post-list-text-color: var(--text-color);
+  --btn-patinator-text-color: var(--text-color);
+  --btn-paginator-hover-color: #c1c3c5;
+  --btn-paginator-border-color: var(--btn-border-color);
+  --btn-text-color: var(--text-color);
+
+  /* Posts */
+  --toc-highlight: #007acc;
+  --tag-bg: #d9e3ec;
+  --tag-hover: #d0e8f2;
+  --tb-odd-bg: rgba(233, 236, 241, 0.52);
+  --tb-even-bg: #f5f5f5;
+  --tb-border-color: var(--tb-odd-bg);
+  --footnote-target-bg: #007acc;
+  --btn-share-color: #767c86;
+  --btn-share-hover-color: #60a5fa;
+  --relate-post-date: var(--text-muted-color);
+  --card-bg: #f5f5f5;
+  --card-hovor-bg: #c1c3c5;
+  --card-shadow: rgba(240, 240, 240, 0.72) 0 6px 18px 0,
+    rgba(200, 200, 200, 0.24) 0 0 0 1px;
+  --kbd-wrap-color: #a8adb4;
+  --kbd-text-color: #2b3a42;
+  --kbd-bg-color: #f5f5f5;
+  --prompt-text-color: rgba(76, 79, 86, 0.75);
+  --prompt-tip-bg: rgba(206, 236, 220, 0.64);
+  --prompt-tip-icon-color: rgba(46, 164, 85, 0.81);
+  --prompt-info-bg: rgba(183, 223, 241, 0.8);
+  --prompt-info-icon-color: #007acc;
+  --prompt-warning-bg: rgba(255, 229, 158, 0.88);
+  --prompt-warning-icon-color: rgba(255, 165, 0, 0.8);
+  --prompt-danger-bg: rgba(240, 149, 149, 0.8);
+  --prompt-danger-icon-color: #e63946; /* Red accent */
+
+  /* tags */
+  --tag-border: #a8adb4;
+  --tag-shadow: #f5f5f5;
+  --search-tag-bg: var(--tag-bg);
+  --dash-color: #c1c3c5;
+
+  /* categories */
+  --categories-border: rgba(171, 178, 190, 0.5);
+  --categories-hover-bg: #d0e8f2;
+  --categories-icon-hover-color: #2b3a42;
+
+  /* archives */
+  --timeline-node-bg: #007acc;
+  --timeline-color: #c1c3c5;
+  --timeline-year-dot-color: var(--timeline-color);
+
+  .dark {
+    display: none;
+  }
+
+  hr {
+    border-color: var(--main-border-color);
+  }
+
+  /* categories */
+  .categories.card,
+  .list-group-item {
+    background-color: var(--card-bg);
+  }
+
+  .categories {
+    .card-header {
+      background-color: var(--card-header-bg);
+    }
+
+    .list-group-item {
+      border-left: none;
+      border-right: none;
+      padding-left: 2rem;
+      border-color: var(--categories-border);
+
+      &:last-child {
+        border-bottom-color: var(--card-bg);
+      }
+    }
+  }
+
+  #archives li:nth-child(odd) {
+    background-image: linear-gradient(
+      to left,
+      #f5f5f5,
+      #f5f5f5,
+      #f5f5f5,
+      #f5f5f5,
+      #f5f5f5
+    );
+  }
+
+  color-scheme: light;
+
+  #disqus_thread {
+    color-scheme: none;
+  }
+} /* light-scheme */
+
+img {
+  background: none !important;
+}
