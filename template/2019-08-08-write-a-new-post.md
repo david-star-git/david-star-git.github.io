@@ -247,8 +247,6 @@ image:
 ---
 ```
 
-> You can observe LQIP in the preview image of post \"[Text and Typography](/_posts/template/text-and-typography/)\".
-
 For normal images:
 
 ```markdown
