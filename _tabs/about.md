@@ -4,15 +4,12 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-# Über Uns
+# About Me
 
-Die PYT-Academy, oder Paraguay Technik Akademie, ist mehr als nur eine Gemeinschaft von Technikbegeisterten. Wir sind eine Plattform für den Austausch von Ideen, für das Lernen und das gemeinsame Arbeiten an spannenden Projekten. Unser Ziel ist es, Technologie für jeden zugänglich zu machen, egal ob Anfänger oder erfahrener Profi.
+Hi, I’m David, a 17-year-old aspiring software engineer with a passion for programming and everything related to Linux. My journey into the tech world is fueled by curiosity and a desire to create. I believe that technology has the power to change lives, and I’m dedicated to learning as much as I can.
 
-Unsere Community besteht aus Menschen aus allen Lebensbereichen, die eines gemeinsam haben: Die Begeisterung für Technik. Wir teilen unser Wissen, unterstützen uns gegenseitig und wachsen zusammen. Wir lernen von einander und arbeiten zusammen an herausfordernden Projekten, von DIY Power-Walls bis hin zu komplexen Automatisierungsprojekten.
+As a self-taught programmer, I thrive on exploring new languages and frameworks, diving deep into coding challenges, and discovering the intricacies of Linux systems. My goal is to build a solid foundation in software engineering and contribute to innovative projects that can make a difference.
 
-Wir glauben fest daran, dass Lernen am besten in der Gemeinschaft geschieht und dass jeder von uns etwas beitragen kann. Deshalb haben wir verschiedene Plattformen für den Austausch: eine öffentliche Telegram-Gruppe für allgemeine Diskussionen, einen privaten Discord-Server für spezifischere Fragen und Projekte, und nun auch diese Website, die als Informationsbasis für alle Mitglieder und Interessenten dient.
+I enjoy connecting with like-minded individuals who share my enthusiasm for technology. Whether through online forums, coding communities, or local meetups, I believe in the power of collaboration and knowledge sharing. Learning from others and helping each other grow is what drives me forward.
 
-Wenn Sie sich für Technik begeistern und Teil unserer wachsenden Gemeinschaft werden möchten, laden wir Sie herzlich ein, sich uns anzuschließen. Wir freuen uns darauf, Sie kennenzulernen und gemeinsam spannende Projekte zu verwirklichen.
-
-Herzlich,
-sergius und das PYT-Academy Team
+If you’re passionate about programming or interested in Linux, I would love to connect and exchange ideas. Let’s learn together and work on exciting projects that push the boundaries of what we can create.
