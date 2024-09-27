@@ -16,11 +16,11 @@ image:
 
 # What is Linux?
 
-Linux is an open-source operating system kernel, first created by Linus Torvalds in 1991. The kernel is the core of any operating system, managing hardware resources and facilitating communication between hardware and software. Unlike proprietary operating systems like Windows or macOS, Linux is free and open-source, which means anyone can view, modify, and distribute its source code.
+Linux is an open-source operating system kernel[^kernel], first created by Linus Torvalds in 1991. The kernel is the core of any operating system, managing hardware resources and facilitating communication between hardware and software. Unlike proprietary[^proprietary] operating systems like Windows or macOS, Linux is free and open-source, which means anyone can view, modify, and distribute its source code.
 
 ## What is a Linux Distribution (Distro)?
 
-A Linux distribution (or "distro") is essentially a packaged version of Linux that includes the kernel, system software, and a set of default applications, making it a complete operating system. Distros differ based on package managers, desktop environments, release cycles, and more. The good news? Most of the differences are minor and won't affect your day-to-day use unless you're working on specific tasks or configurations.
+A Linux distribution (or "distro") is essentially a packaged version of Linux that includes the kernel, system software, and a set of default applications, making it a complete operating system. Distros differ based on package managers, desktop environments[^desktop_environment], release cycles, and more. The good news? Most of the differences are minor and won't affect your day-to-day use unless you're working on specific tasks or configurations.
 
 ## Why (or Why Not) Switch to Linux?
 
@@ -34,14 +34,14 @@ If you are looking for the ideal Linux distro, you may be new to Linux or consid
 
 3. **Customization:** Linux allows for extensive customization, from your desktop environment to the software you use. Want a lightweight system for an older machine? Prefer a minimal design or a highly functional, productivity-focused environment? Linux gives you the tools to make your desktop truly yours.
 
-4. **Security and Stability:** Linux is known for its robust security features. It's less vulnerable to viruses and malware compared to other operating systems, and most distributions have strong security policies in place. Additionally, many Linux distributions are incredibly stable, making them great choices for both personal and professional use.
+4. **Security and Stability:** Linux is known for its robust security features. It's less vulnerable to viruses and malware compared to other operating systems, and most distributions have strong security policies in place. Additionally, many Linux distributions are incredibly stable[^stable], making them great choices for both personal and professional use.
 
 > **Tip:** If you want an operating system that gives you freedom, security, and customization, Linux is an excellent choice.  
 {: .prompt-tip }
 
 ### Why You Might *Not* Want to Switch to Linux
 
-1. **Software Compatibility:** While Linux has a vast library of software, some applications that you may be accustomed to using on Windows or macOS—such as Adobe Creative Suite or certain video games—aren't natively available. You might need to find alternatives or use compatibility layers like Wine, which can sometimes be less reliable.
+1. **Software Compatibility:** While Linux has a vast library of software, some applications that you may be accustomed to using on Windows or macOS—such as Adobe Creative Suite or certain video games—aren't natively available. You might need to find alternatives or use compatibility layers like [Wine](https://www.winehq.org/){:target="_blank"}, which can sometimes be less reliable.
 
 2. **Learning Curve:** Linux is powerful but it can also be unfamiliar. Even though many distributions have user-friendly interfaces, certain tasks may still require the use of the terminal, which could be daunting if you're not used to it. Customizing and troubleshooting can sometimes demand a deeper understanding of the system.
 
@@ -69,6 +69,7 @@ Here's a comparison of some popular Linux distros:
 | Distro      | Based On   | Package Manager | Target Audience         |
 |-------------|------------|-----------------|-------------------------|
 | Debian      | None       | APT             | Stability-focused users  |
+| Ubuntu      | Debian     | APT             | 	Desktop & server users |
 | Linux Mint  | Ubuntu     | APT             | Desktop users, general use|
 | OpenSUSE    | None       | Zypper          | Power users, developers  |
 | Fedora      | None       | DNF             | Developers, cutting-edge software enthusiasts |
@@ -80,46 +81,50 @@ Let's dive deeper into a few of these distributions.
 
 ### Debian
 
-Debian is one of the oldest and most stable Linux distributions. It forms the base for many other popular distros, including Ubuntu and Linux Mint. Debian is known for its stability and conservative approach to updates, making it a reliable choice for servers and production systems.
+[Debian](https://www.debian.org){:target="_blank"} is one of the oldest and most stable Linux distributions. It forms the base for many other popular distros, including Ubuntu and Linux Mint. Debian is known for its stability and conservative approach to updates, making it a reliable choice for servers and production systems.
 
 > **Tip:** If you need an operating system where stability and reliability are key, Debian is a solid choice.  
 {: .prompt-tip }
 
+### Ubuntu
+
+[Ubuntu](https://ubuntu.com/){:target="_blank"} is a user-friendly Linux distribution based on Debian. It is one of the most popular distros, offering a good balance between stability and the latest features. Ubuntu targets both desktop and server environments and provides regular Long-Term Support (LTS) releases, ensuring extended support for critical updates. It's a go-to choice for users seeking ease of use and a large support community.
+
 ### Linux Mint
 
-Linux Mint is built on top of Ubuntu (which itself is based on Debian), offering a more beginner-friendly experience. It comes with a range of desktop environments, such as Cinnamon and MATE, and has excellent hardware support right out of the box. It’s great for users switching from Windows, as it provides a similar interface.
+[Linux Mint](https://linuxmint.com){:target="_blank"} is built on top of Ubuntu (which itself is based on Debian), offering a more beginner-friendly experience. It comes with a range of desktop environments, such as Cinnamon and MATE, and has excellent hardware support right out of the box. It’s great for users switching from Windows, as it provides a similar interface.
 
 > **Info:** Linux Mint is a popular choice for those looking for an intuitive, ready-to-use desktop experience.  
 {: .prompt-info }
 
 ### OpenSUSE
 
-OpenSUSE is a powerful and flexible distribution geared toward developers and power users. It provides two main versions: Leap, for stability, and Tumbleweed, for rolling releases with cutting-edge software. OpenSUSE’s Yast tool offers an easy way to manage system configurations, from software installations to network settings.
+[OpenSUSE](https://www.opensuse.org){:target="_blank"} is a powerful and flexible distribution geared toward developers and power users. It provides two main versions: Leap, for stability, and Tumbleweed, for rolling releases[^rolling_releases] with cutting-edge software. OpenSUSE’s Yast tool offers an easy way to manage system configurations, from software installations to network settings.
 
 > **Info:** OpenSUSE is excellent if you like having complete control over your system configurations with a strong suite of management tools.  
 {: .prompt-info }
 
 ### Fedora
 
-Fedora is known for being on the bleeding edge of technology. Sponsored by Red Hat, Fedora serves as a testing ground for new features that may later be incorporated into Red Hat Enterprise Linux. It's an excellent choice for developers and users who want the latest software, but it may require a bit more tweaking and management.
+[Fedora](https://getfedora.org){:target="_blank"} is known for being on the bleeding edge of technology. Sponsored by [Red Hat](https://www.redhat.com/){:target="_blank"}, Fedora serves as a testing ground for new features that may later be incorporated into Red Hat Enterprise Linux. It's an excellent choice for developers and users who want the latest software, but it may require a bit more tweaking and management.
 
 > **Warning:** Fedora often includes the latest software, which means it can sometimes be less stable than other distributions like Debian or Mint.  
 {: .prompt-warning }
 
 ### Parrot OS
 
-Parrot OS is a security-focused distribution, designed for penetration testing, forensics, and privacy-conscious users. It includes a full suite of security tools right out of the box. While it’s powerful, it’s not necessarily designed for general use, but rather for security professionals or enthusiasts.
+[Parrot OS](https://www.parrotsec.org){:target="_blank"} is a security-focused distribution, designed for penetration testing[^penetration_testing], forensics[^forensics], and privacy-conscious users. It includes a full suite of security tools right out of the box. While it’s powerful, it’s not necessarily designed for general use, but rather for security professionals or enthusiasts.
 
 ### Arch Linux
 
-Arch Linux is known for its simplicity and full customization potential. It follows a rolling release model, meaning that you always have the latest software updates without needing to reinstall. Arch Linux requires you to set up everything from scratch, offering a deep learning experience in the process.
+[Arch Linux](https://archlinux.org){:target="_blank"} is known for its simplicity and full customization potential. It follows a rolling release model, meaning that you always have the latest software updates without needing to reinstall. Arch Linux requires you to set up everything from scratch, offering a deep learning experience in the process.
 
 > **Tip:** Using Arch Linux will teach you a lot about Linux! If you take your time and follow the [Arch Wiki](https://wiki.archlinux.org/){:target="_blank"}, you'll gain valuable knowledge and control over your system.  
 {: .prompt-tip }
 
 ### EndeavourOS
 
-EndeavourOS is essentially Arch Linux with a more user-friendly installer. It's an excellent compromise for users who want the Arch experience without having to go through the complex installation process. It offers several pre-configured desktop environments and minimal pre-installed software.
+[EndeavourOS](https://endeavouros.com){:target="_blank"} is essentially Arch Linux with a more user-friendly installer. It's an excellent compromise for users who want the Arch experience without having to go through the complex installation process. It offers several pre-configured desktop environments and minimal pre-installed software.
 
 ### Do the Differences Really Matter?
 
@@ -153,5 +158,19 @@ At the end of this post, here's a fascinating visualization of the evolution of 
 
 > **Tip:** Click on the link above to zoom in and pan around the timeline and explore different Linux distributions and their development over the years.  
 {: .prompt-tip }
+
+[^kernel]: **Kernel**: The core component of a Linux operating system responsible for managing system resources like CPU, memory, and hardware devices.
+  
+[^proprietary]: **Proprietary**: Software that is owned and controlled by a company, with restrictions on usage, modification, or redistribution. Opposite of open-source software.
+
+[^desktop_environment]: **Desktop Environment**: A collection of tools and graphical interfaces that provide users with a visual interface to interact with the Linux system, such as GNOME, KDE, or XFCE.
+
+[^stable]: **Stable**: Refers to a version of Linux with well-tested, reliable software, generally receiving fewer updates but with an emphasis on avoiding bugs or crashes.
+
+[^rolling_releases]: **Rolling Releases**: A distribution model where the system continuously updates with the latest software versions, rather than requiring major upgrades (e.g., Arch Linux).
+
+[^penetration_testing]: **Penetration Testing**: The practice of testing the security of systems by simulating attacks, often using specialized Linux distributions like Kali Linux or ParrotOS.
+
+[^forensics]: **Forensics**: The process of gathering and analyzing digital evidence, often used in investigating cybercrimes or system breaches. Linux distributions like ParrotOS have tools specialized for this purpose.
 
 [^aur]: [**Arch User Repository**](https://wiki.archlinux.org/title/AUR_helpers){:target="_blank"}: is a community-driven repository for Arch Linux users to share and maintain packages that are not included in the official Arch repositories. It allows users to contribute their own package builds, making it easier to install software that may not be readily available.
