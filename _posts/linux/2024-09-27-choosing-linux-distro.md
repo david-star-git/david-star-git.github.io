@@ -154,4 +154,4 @@ At the end of this post, here's a fascinating visualization of the evolution of 
 > **Tip:** Click on the link above to zoom in and pan around the timeline and explore different Linux distributions and their development over the years.  
 {: .prompt-tip }
 
-[^aur]: Arch User Repository
+[^aur]: [**Arch User Repository**](https://wiki.archlinux.org/title/AUR_helpers){:target="_blank"}: is a community-driven repository for Arch Linux users to share and maintain packages that are not included in the official Arch repositories. It allows users to contribute their own package builds, making it easier to install software that may not be readily available.
