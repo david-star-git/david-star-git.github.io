@@ -8,6 +8,7 @@ tags: [linux, distros, comparison]
 pin: false
 math: false
 mermaid: false
+comments: true
 image:
   path: /assets/img/posts/linux-distros.webp
   alt: Various Linux distributions and their logos.
