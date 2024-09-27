@@ -126,7 +126,7 @@ When it comes down to it, most Linux distributions offer a similar experience. T
 
 Here’s why the differences between distros are often negligible for most users:
 
-1. **Same Software Availability:** Nearly every Linux distribution gives you access to the same core software. Whether you’re using Debian’s APT, Fedora’s DNF, or Arch’s Pacman, you can install the same applications like web browsers, text editors, and office suites. Additionally, some distros have unique offerings, like Arch’s AUR (Arch User Repository), which gives users access to a vast library of third-party software that's easy to install. But overall, with Flatpaks and AppImages, most distros can access a broad range of applications.
+1. **Same Software Availability:** Nearly every Linux distribution gives you access to the same core software. Whether you’re using Debian’s APT, Fedora’s DNF, or Arch’s Pacman, you can install the same applications like web browsers, text editors, and office suites. Additionally, some distros have unique offerings, like Arch’s AUR[^aur], which gives users access to a vast library of third-party software that's easy to install. But overall, with Flatpaks and AppImages, most distros can access a broad range of applications.
 
 2. **Desktop Environments:** While different distros might come pre-installed with certain desktop environments (e.g., Linux Mint with Cinnamon or Fedora with GNOME), you can install any desktop environment on almost any Linux distribution. Want KDE on Fedora? Or GNOME on Arch? It’s all possible, meaning you can customize your distro to fit your preferred look and feel. The user interface experience can be consistent regardless of the distribution you choose.
 
@@ -152,3 +152,5 @@ At the end of this post, here's a fascinating visualization of the evolution of 
 
 > **Tip:** Click on the link above to zoom in and pan around the timeline and explore different Linux distributions and their development over the years.  
 {: .prompt-tip }
+
+[^aur]: Arch User Repository
