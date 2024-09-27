@@ -5,18 +5,17 @@
 
 <script type="text/javascript">
   var disqus_config = function () {
-    this.page.url = '{{ page.url | absolute_url }}';
-    this.page.identifier = '{{ page.url }}';
+    this.page.url = '{{ page.url | absolute_url }}';  // Use the canonical URL for the page
+    this.page.identifier = '{{ page.url }}';            // Use the unique identifier for the page
   };
 
   /* Lazy loading */
   var disqus_observer = new IntersectionObserver(
     function (entries) {
       if (entries[0].isIntersecting) {
-        (function () {
-          var d = document,
-            s = d.createElement('script');
-          s.src = 'https://david-star-git-github-io.disqus.com/embed.js';
+        (function() {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://david-star-git.disqus.com/embed.js'; // Use the new Disqus embed URL
           s.setAttribute('data-timestamp', +new Date());
           (d.head || d.body).appendChild(s);
         })();
@@ -30,7 +29,7 @@
   disqus_observer.observe(document.querySelector('#disqus_thread'));
 
   /* Auto switch theme */
-  function reloadDisqus() {
+  function reloadDisqus(event) {
     if (event.source === window && event.data && event.data.direction === ModeToggle.ID) {
       /* Disqus hasn't been loaded */
       if (typeof DISQUS === 'undefined') {
@@ -47,3 +46,5 @@
     window.addEventListener('message', reloadDisqus);
   }
 </script>
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
