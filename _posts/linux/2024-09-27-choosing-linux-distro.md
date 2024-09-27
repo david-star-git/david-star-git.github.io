@@ -1,8 +1,8 @@
 ---
-title: Choosing the Right Linux Distribution: Does It Really Matter?
+title: Choosing the Right Linux Distribution：Does It Really Matter?
 description: A breakdown of Linux distributions and whether the differences between them really make a difference.
 author: david
-date: 2024-09-27 12:00:00 +0800
+date: 2024-09-26 07:00:00 -0400
 categories: [Linux, Tech]
 tags: [linux, distros, comparison]
 pin: false
