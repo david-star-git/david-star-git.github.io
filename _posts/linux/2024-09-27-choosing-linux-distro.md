@@ -16,7 +16,7 @@ image:
 
 # What is Linux?
 
-Linux is an open-source operating system kernel[^kernel], first created by Linus Torvalds in 1991. The kernel is the core of any operating system, managing hardware resources and facilitating communication between hardware and software. Unlike proprietary[^proprietary] operating systems like Windows or macOS, Linux is free and open-source, which means anyone can view, modify, and distribute its source code.
+Linux is an open-source operating system *kernel*[^kernel], first created by Linus Torvalds in 1991. The kernel is the core of any operating system, managing hardware resources and facilitating communication between hardware and software. Unlike proprietary[^proprietary] operating systems like Windows or macOS, Linux is free and open-source, which means anyone can view, modify, and distribute its source code.
 
 ## What is a Linux Distribution (Distro)?
 
@@ -41,7 +41,7 @@ If you are looking for the ideal Linux distro, you may be new to Linux or consid
 
 ### Why You Might *Not* Want to Switch to Linux
 
-1. **Software Compatibility:** While Linux has a vast library of software, some applications that you may be accustomed to using on Windows or macOS—such as Adobe Creative Suite or certain video games—aren't natively available. You might need to find alternatives or use compatibility layers like [Wine](https://www.winehq.org/){:target="_blank"}, which can sometimes be less reliable.
+1. **Software Compatibility:** While Linux has a vast library of software, some applications that you may be accustomed to using on Windows or macOS, such as Adobe Creative Suite or certain video games, aren't natively available. You might need to find alternatives or use compatibility layers like [Wine](https://www.winehq.org/){:target="_blank"}, which can sometimes be less reliable.
 
 2. **Learning Curve:** Linux is powerful but it can also be unfamiliar. Even though many distributions have user-friendly interfaces, certain tasks may still require the use of the terminal, which could be daunting if you're not used to it. Customizing and troubleshooting can sometimes demand a deeper understanding of the system.
 
